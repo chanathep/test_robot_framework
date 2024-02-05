@@ -1,4 +1,3 @@
 *** Test Cases ***
-Hello World Test Case
-  Open Browser    http://www.facebook.com    chrome
-  Close Browser
+My First Robot Test
+    Log To Console    Hello Robot World!
