@@ -1,3 +1,4 @@
 *** Test Cases ***
-Simple Test
-    Log    Hello, Robot Framework!
+Hello World Test Case
+  Open Browser    http://www.facebook.com    chrome
+  Close Browser
