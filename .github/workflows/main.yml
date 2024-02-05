@@ -15,10 +15,11 @@ jobs:
 
       - name: Run Robot Framework tests
         uses: joonvena/robotframework-docker-action@v0.1
-        with:
+        # with:
+        env:
           BROWSER: chrome
-          # ROBOT_TESTS_DIR: ${{ github.workspace }}/robot_tests
-          # ROBOT_REPORTS_DIR: ${{ github.workspace }}/reports
+          ROBOT_TESTS_DIR: ${{ github.workspace }}/robot_tests
+          ROBOT_REPORTS_DIR: ${{ github.workspace }}/reports
 
       - name: Upload test reports
         uses: actions/upload-artifact@v1
