@@ -21,6 +21,9 @@ jobs:
           ROBOT_TESTS_DIR: ${{ github.workspace }}/robot_tests
           # ROBOT_REPORTS_DIR: ${{ github.workspace }}/reports
 
+      - name: Adding markdown
+        run: echo '### Test Results' >> $GITHUB_STEP_SUMMARY
+
       # - name: Upload test reports
       #   uses: actions/upload-artifact@v1
       #   with:
