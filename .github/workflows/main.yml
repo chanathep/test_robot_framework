@@ -24,8 +24,8 @@ jobs:
       - name: Adding markdown
         run: echo '### Test Results' >> $GITHUB_STEP_SUMMARY
 
-      # - name: Upload test reports
-      #   uses: actions/upload-artifact@v1
-      #   with:
-      #     name: reports
-      #     path: /reports
+      - name: Upload test reports
+        uses: actions/upload-artifact@v1
+        with:
+          name: reports
+          path: /reports
